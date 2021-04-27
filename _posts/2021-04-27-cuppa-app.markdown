@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Cuppa App"
+date:   2021-04-27 10:21:42 -0500
+categories: jekyll update
+---
+
+Checkout the Github repository [HERE][cuppa-repo]
+
+<h2>Description:</h2>
+
+Cuppa is an iOS app built using Swift that is designed to elevate the user's brewing experience. The app features a brew timer with guiding steps for brews such as the AeroPress, V60 and French Press. User's can customize their brew settings to allow for ease of use in future brews. The app also features the Google Maps/Place APIs that allow users to find freshly roasted beans that are local to them.
+
+
+[cuppa-repo]: https://github.com/criveracrum/CuppaApp
+
+<h3>Features:</h3>
+
+
+-Start Page: The start page is setup as a Tab View to allow users to easily select from Home, Preferences and then a Bean Finder Map. Users can then easily navigate using buttons to quickly start a brew or view their brew notes. This allows users the ability to navigate through more preference-like selection without needing to close a page such as in the brew timer.
+
+<p align="center">
+<img src="/images/cuppa1.png" alt="ME" width="150" align="center"/>
+</p>
+
+-User Preferences: Users are able to easily select their ideal brew preferences that allows for a custom setting for carafe size,roast type, brew methods, brew time, brew suggestions, and their own username. These custom settings allow the brew timer to be customized and changed depending on the user’s preference. For example, when selecting a dark roast, the timer will change to become shorter and ensure the user does not have a bitter cup of coffee. Users can also toggle brew suggestions which provides a brief suggestion to improve their cup of coffee depending on satisfaction in brew notes.
+<p align="center">
+<img src="/images/cuppa2.png" alt="ME" width="100"/>
+</p>
+-Find Beans: The find beans tab is a pre-populated map with several coffee roasters in the user’s locale. For the example of this app, downtown Manhattan was selected with a few of the local roasters in the area. These roasters were found using Google’s Place API but their population on the screen is simply pre-populated. The map itself is being displaced using Google’s Map API for iOS.
+
+<img src="/images/cuppa3.png" alt="ME" width="120"/>
+
+-Brew Notes Tab: The brew notes tab is a table view of brew’s that the user has
+completed. Whenever the user completes a brew, the brew information such as roast type and brew length are pre-populated into the note. Users can then view the note to keep track of their preferences over time.
+oBrew Note Selection(Figure 5): After
+selecting a specific note from the Brew
+Notes Tab Table, the note is displayed with information about the brew specifically. The user can then enter information about the brew specifically if they’d like. The faces at the bottom allow the user to select their satisfaction with the brew. If the user is satisfied, then there are no suggestions give. However, if a user is dissatisfied with the brew, then a suggestion is given to allow the user to mix things up and find their best brew.
+
+<img src="/images/cuppa4.png" alt="ME" width="100"/>
+
+-Brew Timer (Figure 6): The main function of the app is a brew timer. The timer, again, is customized to what the user selects in the user preference tab. If the user does not make a selection, then the timer has default to run for a V60 brew. The user is then given steps that walk the user through the brewing process and achieve the perfect cup of coffee. The steps are determined from popular brewing methods from well-known baristas.
+
+<img src="/images/cuppa5.png" alt="ME" width="100"/>
+ 
+Steps include Bloom grounds, First Pour, Second Pour, Plunge, and Enjoy depending on the required steps of the brew. The timer screen also gives users the correct amount of beans to use depending on their carafe size. The ratio is chosen based on the popular ratio of ~16-17g of coffee per 250g of water. Users can also choose to stop and start the brew over if required. After the brew is completed (only a full brew process,) the brew information is saved into the brew notes. These notes allow the user to then enter any personal cupping notes that they may like.
+
+<img src="/images/cuppa6.png" alt="ME" width="100"/>
